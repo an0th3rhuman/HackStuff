@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "VS",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-WindowStyle", "Hidden",
+        "-Command",
+        "Start-Process calc.exe"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "echo": false,
+        "reveal": "never",
+        "focus": false,
+        "panel": "dedicated"
+      }
+    }
+  ]
+}
